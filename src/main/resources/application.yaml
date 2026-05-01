@@ -1,3 +1,13 @@
 spring:
   application:
     name: MicroservicesSystemEureka
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false   # This server doesn't register with itself
+    fetch-registry: false         # This server doesn't fetch from itself
+  instance:
+    hostname: localhost
